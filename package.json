@@ -18,6 +18,7 @@
 	},
 	"homepage": "https://github.com/maryarty777/firstproject#readme",
 	"dependencies": {
+		"crc-32": "^1.2.2",
 		"lodash": "^4.17.21",
 		"react": "^18.2.0"
 	},
