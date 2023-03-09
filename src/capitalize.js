@@ -1,9 +1,8 @@
-function capitalize(text) {
-  if (text === "" || typeof text !== "string") return "";
-  const arr = text.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
-	return arr;
-}
-console.log(capitalize("hello"));
-console.log(capitalize("how are you?"));
+import _ from "lodash";
 
-export { capitalize };
+const get = (obj, key, defaultValue) => {
+  return _.has(obj, key) ? obj[key] : defaultValue;
+};
+//console.log( get({first: 'one'}, 'first', 'nothing') );
+
+export { get };
