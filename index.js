@@ -1,5 +1,15 @@
-import _ from 'lodash';
+//import _ from "lodash";
 
-console.log(_.last((['one', 'two', 'three'])));
+const capitalize = (text) => {
+	if (text === ''|| typeof text !== 'string') return '';
+	const [firstchar, ...restChar] = text;
+	return `${firstchar.toUpperCase()}${restChar.join('')}`
+}
 
-console.log('Hello my first project');
+if (capitalize ('hello') !== 'Hello') {
+	throw new Error ('Aункция работает неверно!')
+}
+
+console.log( capitalize (null) );
+console.log( capitalize ('how are you') );
+
